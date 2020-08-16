@@ -1,0 +1,1886 @@
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 1f3945d2db17f6a4
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/> (referer: None)
+ERROR:scrapy.core.scraper:Spider must return request, item, or None, got 'generator' in <GET https://scholar.google.ca/>
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 2,
+ 'crawlera/request': 2,
+ 'crawlera/request/method/GET': 2,
+ 'crawlera/response': 2,
+ 'crawlera/response/status/200': 2,
+ 'downloader/request_bytes': 590,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 34011,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 3.427353,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 1, 28, 29, 832368),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 1, 28, 26, 405015)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: bad3757b27fac0aa
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+CRITICAL:twisted:Unhandled error in Deferred:
+CRITICAL:twisted:
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spiders\__init__.py", line 49, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 8, in __init__
+    super(MySpider, self).__init__(*args, **kwargs)
+NameError: name 'MySpider' is not defined
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 27c27acfde1da373
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+CRITICAL:twisted:Unhandled error in Deferred:
+CRITICAL:twisted:
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spiders\__init__.py", line 49, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 8, in __init__
+    super(ScholarScraper, self).__init__(*args, **kwargs)
+NameError: name 'ScholarScraper' is not defined
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 4e5166df7e47f7f6
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/robots.txt> (referer: None)
+DEBUG:scrapy.downloadermiddlewares.robotstxt:Forbidden by robots.txt: <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=>
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/exception_count': 1,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 1,
+ 'downloader/request_bytes': 300,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 758,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.681604,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 1, 59, 42, 581356),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'robotstxt/forbidden': 1,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 1, 59, 39, 899752)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: cf08554eb3330011
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    root_article: scholarly.search_pubs(keywords)
+NameError: name 'root_article' is not defined
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36712,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.500501,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 0, 17, 592304),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 0, 16, 91803)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: be96a1ac89653395
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    'root_article': scholarly.search_pubs(keywords)
+NameError: name 'keywords' is not defined
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36661,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.034893,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 1, 11, 554699),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 1, 10, 519806)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 94ea410da2d94252
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    'root_article': scholarly.search_pubs(self.keywords)
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36710,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.944141,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 1, 56, 219346),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 1, 55, 275205)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 950991219a0f3513
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    'root_article': scholarly.search_pubs(self.keywords)
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36705,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 3.567991,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 7, 17, 512577),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 7, 13, 944586)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 5169dc9edd12d083
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.016001,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 8, 50, 978377),
+ 'log_count/INFO': 12,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 8, 50, 962376)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: a6ca546626626f97
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.025738,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 11, 7, 956129),
+ 'log_count/INFO': 12,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 11, 7, 930391)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 0855663aef86d928
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 12, in parse
+    full_url = 'https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + keywords + '&btnG='
+NameError: name 'keywords' is not defined
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36627,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.938823,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 12, 44, 646105),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 12, 43, 707282)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: b7df3b0ed5c48e3a
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 12, in parse
+    full_url = 'https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + self.keywords + '&btnG='
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36710,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.950242,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 12, 59, 719600),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 12, 58, 769358)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 65dd6cdfaeaa717c
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 12, in parse
+    full_url = 'https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + self.keywords + '&btnG='
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36711,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.088725,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 58, 51, 949779),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 58, 50, 861054)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: a83a7bc8430c7963
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 12, in parse
+    full_url = 'https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + self.keywords + '&btnG='
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36706,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.649012,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 2, 59, 22, 260219),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 2, 59, 19, 611207)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 312068350c6f9cc6
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 12, in parse
+    full_url = 'https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + self.keywords + '&btnG='
+AttributeError: 'ScholarScraper' object has no attribute 'keywords'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36714,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.3877,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 0, 58, 128367),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 0, 56, 740667)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 30cc22452f2c5b57
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+CRITICAL:twisted:Unhandled error in Deferred:
+CRITICAL:twisted:
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spiders\__init__.py", line 49, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 10, in __init__
+    self.start_urls = ['https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=' + keywords + '&btnG=']
+NameError: name 'keywords' is not defined
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: ccc6726a45d6322e
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=>
+{'root_article': [<Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="744DqPXGwnoJ" href="http://www...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="fGeQlvu-2_IJ" href="https://bo...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="re9ssrU-exUJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="9WouRiFbIK4J" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="xY3q9qnkN54J" href="https://bo...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="CrboZm18i0AJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="_3o-xhuGyg0J" href="https://ac...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="Zu7aKNjvAUwJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="pIjQPO7__AYJ" href="https://co...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="UwtLySK5iawJ" href="https://bo...'>]}
+ERROR:scrapy.utils.signal:Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000002017071E0D0>>
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 164, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\extensions\feedexport.py", line 363, in item_scraped
+    slot.exporter.export_item(item)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\exporters.py", line 134, in export_item
+    data = self.encoder.encode(itemdict)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\serialize.py", line 36, in default
+    return super(ScrapyJSONEncoder, self).default(o)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Selector is not JSON serializable
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36702,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.82195,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 6, 43, 682681),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 6, 40, 860731)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 87adf76b958dd596
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=>
+{'root_article': [<Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="744DqPXGwnoJ" href="http://www...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="fGeQlvu-2_IJ" href="https://bo...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="re9ssrU-exUJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="9WouRiFbIK4J" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="xY3q9qnkN54J" href="https://bo...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="CrboZm18i0AJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="_3o-xhuGyg0J" href="https://ac...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="Zu7aKNjvAUwJ" href="https://ww...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="pIjQPO7__AYJ" href="https://co...'>, <Selector xpath='//*[contains(concat( " ", @class, " " ), concat( " ", "gs_rt", " " ))]//a' data='<a id="UwtLySK5iawJ" href="https://bo...'>]}
+ERROR:scrapy.utils.signal:Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x000001D83415CE80>>
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 164, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\extensions\feedexport.py", line 363, in item_scraped
+    slot.exporter.export_item(item)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\exporters.py", line 134, in export_item
+    data = self.encoder.encode(itemdict)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\serialize.py", line 36, in default
+    return super(ScrapyJSONEncoder, self).default(o)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Selector is not JSON serializable
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 2,
+ 'crawlera/request': 2,
+ 'crawlera/request/method/GET': 2,
+ 'crawlera/response': 2,
+ 'crawlera/response/banned': 1,
+ 'crawlera/response/error': 1,
+ 'crawlera/response/error/banned': 1,
+ 'crawlera/response/status/200': 1,
+ 'crawlera/response/status/503': 1,
+ 'downloader/request_bytes': 662,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 37072,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/503': 1,
+ 'elapsed_time_seconds': 5.17863,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 7, 4, 239789),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'retry/count': 1,
+ 'retry/reason_count/503 Service Unavailable': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 6, 59, 61159)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 59620f1fa0b8ba94
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=>
+{'root_article': ['<a id="744DqPXGwnoJ" href="http://www2.tap-ecosur.edu.mx/mip/Publicaciones/pdf/Coffee%20pests%20and%20their%20management.pdf" data-clk="hl=en&amp;sa=T&amp;oi=ggp&amp;ct=res&amp;cd=0&amp;d=8845851376497168111&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="744DqPXGwnoJ"><b>Coffee </b>pests and their management</a>', '<a id="fGeQlvu-2_IJ" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=oJxpQX4ko7cC&amp;oi=fnd&amp;pg=PT1&amp;dq=coffee&amp;ots=Oii0C-3bS_&amp;sig=8-EX3czZhq6XW2L1cvEESf9_uaQ" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=1&amp;d=17499790764850308988&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="fGeQlvu-2_IJ">All about <b>coffee</b></a>', '<a id="re9ssrU-exUJ" href="https://www.scielo.br/scielo.php?pid=S1677-04202006000100003&amp;script=sci_arttext" data-clk="hl=en&amp;sa=T&amp;oi=ggp&amp;ct=res&amp;cd=2&amp;d=1547899847035383725&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="re9ssrU-exUJ">Phenolic compounds in <b>coffee</b></a>', '<a id="9WouRiFbIK4J" href="https://www.sciencedirect.com/science/article/pii/S0963996911003449" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=3&amp;d=12547128760323697397&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="9WouRiFbIK4J">Functional properties of <b>coffee </b>and <b>coffee </b>by-products</a>', '<a id="xY3q9qnkN54J" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=y0qA89vCr3MC&amp;oi=fnd&amp;pg=PT47&amp;dq=coffee&amp;ots=pyLUSojqGb&amp;sig=d4urnG4upG1H72erB7ErA3SPXKU" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=4&amp;d=11400832400354872773&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="xY3q9qnkN54J"><b>Coffee </b>constituents</a>', '<a id="CrboZm18i0AJ" href="https://www.cabdirect.org/cabdirect/abstract/19690307548" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=5&amp;d=4650947849509975562&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="CrboZm18i0AJ">Pests of <b>coffee</b>.</a>', '<a id="_3o-xhuGyg0J" href="https://academic.oup.com/nar/article-abstract/34/6/1692/2401531" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=6&amp;d=993754121636838143&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="_3o-xhuGyg0J">M-<b>Coffee</b>: combining multiple sequence alignment methods with T-<b>Coffee</b></a>', '<a id="Zu7aKNjvAUwJ" href="https://www.sciencedirect.com/science/article/pii/S1369703X0000084X" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=7&amp;d=5476922333536644710&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="Zu7aKNjvAUwJ">Biotechnological potential of <b>coffee </b>pulp and <b>coffee </b>husk for bioprocesses</a>', '<a id="pIjQPO7__AYJ" href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1046/j.1523-1739.1999.97153.x" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=8&amp;d=503558657046251684&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="pIjQPO7__AYJ">Biodiversity conservation in traditional <b>coffee </b>systems of Mexico</a>', '<a id="UwtLySK5iawJ" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=NQi1LYJxFvUC&amp;oi=fnd&amp;pg=PP13&amp;dq=coffee&amp;ots=dRTcae20St&amp;sig=aVQFh1Yo6kLE1D1Z9fiobkILS6c" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=9&amp;d=12432671805390130003&amp;ei=K6M4X6WtHouayASajon4DA" data-clk-atid="UwtLySK5iawJ"><b>Coffee </b>flavor chemistry</a>']}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.extensions.feedexport:Stored json feed (1 items) in: items.json
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36625,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.379125,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 8, 27, 86462),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 13,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 8, 25, 707337)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 4ee6e79a0ba3fc24
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=>
+{'root_article': ['<a id="744DqPXGwnoJ" href="http://www2.tap-ecosur.edu.mx/mip/Publicaciones/pdf/Coffee%20pests%20and%20their%20management.pdf" data-clk="hl=en&amp;sa=T&amp;oi=ggp&amp;ct=res&amp;cd=0&amp;d=8845851376497168111&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="744DqPXGwnoJ"><b>Coffee </b>pests and their management</a>', '<a id="fGeQlvu-2_IJ" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=oJxpQX4ko7cC&amp;oi=fnd&amp;pg=PT1&amp;dq=coffee&amp;ots=Oii0C-3bWU&amp;sig=GvNjTMtKpE4HPFLGnGnRtsEVobw" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=1&amp;d=17499790764850308988&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="fGeQlvu-2_IJ">All about <b>coffee</b></a>', '<a id="re9ssrU-exUJ" href="https://www.scielo.br/scielo.php?pid=S1677-04202006000100003&amp;script=sci_arttext" data-clk="hl=en&amp;sa=T&amp;oi=ggp&amp;ct=res&amp;cd=2&amp;d=1547899847035383725&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="re9ssrU-exUJ">Phenolic compounds in <b>coffee</b></a>', '<a id="9WouRiFbIK4J" href="https://www.sciencedirect.com/science/article/pii/S0963996911003449" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=3&amp;d=12547128760323697397&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="9WouRiFbIK4J">Functional properties of <b>coffee </b>and <b>coffee </b>by-products</a>', '<a id="xY3q9qnkN54J" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=y0qA89vCr3MC&amp;oi=fnd&amp;pg=PT47&amp;dq=coffee&amp;ots=pyLUSojqK5&amp;sig=ko5IHUHcuhu1c6Ovb-PE3u-KH3c" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=4&amp;d=11400832400354872773&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="xY3q9qnkN54J"><b>Coffee </b>constituents</a>', '<a id="CrboZm18i0AJ" href="https://www.cabdirect.org/cabdirect/abstract/19690307548" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=5&amp;d=4650947849509975562&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="CrboZm18i0AJ">Pests of <b>coffee</b>.</a>', '<a id="_3o-xhuGyg0J" href="https://academic.oup.com/nar/article-abstract/34/6/1692/2401531" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=6&amp;d=993754121636838143&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="_3o-xhuGyg0J">M-<b>Coffee</b>: combining multiple sequence alignment methods with T-<b>Coffee</b></a>', '<a id="Zu7aKNjvAUwJ" href="https://www.sciencedirect.com/science/article/pii/S1369703X0000084X" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=7&amp;d=5476922333536644710&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="Zu7aKNjvAUwJ">Biotechnological potential of <b>coffee </b>pulp and <b>coffee </b>husk for bioprocesses</a>', '<a id="pIjQPO7__AYJ" href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1046/j.1523-1739.1999.97153.x" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=8&amp;d=503558657046251684&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="pIjQPO7__AYJ">Biodiversity conservation in traditional <b>coffee </b>systems of Mexico</a>', '<a id="UwtLySK5iawJ" href="https://books.google.ca/books?hl=en&amp;lr=&amp;id=NQi1LYJxFvUC&amp;oi=fnd&amp;pg=PP13&amp;dq=coffee&amp;ots=dRTcae20Wn&amp;sig=-Jr6Stqq_-qzedNfCSWp16DjL6I" data-clk="hl=en&amp;sa=T&amp;ct=res&amp;cd=9&amp;d=12432671805390130003&amp;ei=TaM4X8PXEIvrmQH6w5ToDQ" data-clk-atid="UwtLySK5iawJ"><b>Coffee </b>flavor chemistry</a>']}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.extensions.feedexport:Stored json feed (1 items) in: items.json
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36514,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 3.150784,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 9, 0, 904302),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 13,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 8, 57, 753518)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 29fb8136a9bba562
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    if tracker == 'root':
+NameError: name 'tracker' is not defined
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36704,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.3348,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 35, 57, 608119),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 35, 56, 273319)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 80310f55ad441200
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 13, in parse
+    if tracker == 'root':
+NameError: name 'tracker' is not defined
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36629,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.29121,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 40, 6, 349824),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 40, 4, 58614)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.3.0 started (bot: rundownscript)
+INFO:scrapy.utils.log:Versions: lxml 4.5.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 3.0, Platform Windows-10-10.0.18362-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'rundownscript',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'DOWNLOAD_TIMEOUT': 600,
+ 'NEWSPIDER_MODULE': 'rundownscript.spiders',
+ 'SPIDER_MODULES': ['rundownscript.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: ddb33c2d38aa7771
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy_crawlera.CrawleraMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:root:Using crawlera at http://proxy.crawlera.com:8010 (apikey: 29ea0d9)
+INFO:root:CrawleraMiddleware: disabling download delays on Scrapy side to optimize delays introduced by Crawlera. To avoid this behaviour you can use the CRAWLERA_PRESERVE_DELAY setting but keep in mind that this may slow down the crawl significantly
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+ERROR:scrapy.core.scraper:Spider error processing <GET https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=coffee&btnG=> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\parsel\selector.py", line 254, in xpath
+    result = xpathev(query, namespaces=nsp,
+  File "src\lxml\etree.pyx", line 1582, in lxml.etree._Element.xpath
+  File "src\lxml\xpath.pxi", line 305, in lxml.etree.XPathElementEvaluator.__call__
+  File "src\lxml\xpath.pxi", line 225, in lxml.etree._XPathEvaluatorBase._handle_result
+lxml.etree.XPathEvalError: Invalid expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Anais\Hackathons\TecHacks Backend\rundownscript\rundownscript\spiders\rundown_spider.py", line 15, in parse
+    'root_article_citedby': response.selector.xpath('//*+[contains(concat( " ", @class, " " ), concat( " ", "gs_nph", " " ))]//a')[0].get(),
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\parsel\selector.py", line 260, in xpath
+    six.reraise(ValueError, ValueError(msg), sys.exc_info()[2])
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\siani\AppData\Local\Programs\Python\Python38\lib\site-packages\parsel\selector.py", line 254, in xpath
+    result = xpathev(query, namespaces=nsp,
+  File "src\lxml\etree.pyx", line 1582, in lxml.etree._Element.xpath
+  File "src\lxml\xpath.pxi", line 305, in lxml.etree.XPathElementEvaluator.__call__
+  File "src\lxml\xpath.pxi", line 225, in lxml.etree._XPathEvaluatorBase._handle_result
+ValueError: XPath error: Invalid expression in //*+[contains(concat( " ", @class, " " ), concat( " ", "gs_nph", " " ))]//a
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'crawlera/delay/reset_backoff': 1,
+ 'crawlera/request': 1,
+ 'crawlera/request/method/GET': 1,
+ 'crawlera/response': 1,
+ 'crawlera/response/status/200': 1,
+ 'downloader/request_bytes': 331,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 36632,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.946329,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 8, 16, 3, 41, 35, 383373),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/ValueError': 1,
+ 'start_time': datetime.datetime(2020, 8, 16, 3, 41, 32, 437044)}
+INFO:scrapy.core.engine:Spider closed (finished)
