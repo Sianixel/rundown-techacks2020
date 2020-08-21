@@ -97,7 +97,6 @@ DOWNLOADER_MIDDLEWARES = {'scrapy_crawlera.CrawleraMiddleware': 610}
 CRAWLERA_ENABLED = True
 
 # the APIkey you get with your subscription
-CRAWLERA_APIKEY = '29ea0d9d66134811b51ead72601a1181'
 
 AUTOTHROTTLE_ENABLED = False
 CONCURRENT_REQUESTS = 32
